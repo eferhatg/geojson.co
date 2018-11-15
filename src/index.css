@@ -12,3 +12,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.App{
+  min-height: 100vh !important;
+}
+
+.Header{
+  height: 10vh
+}
+.Sider{
+  height: 100vh !important;
+}
+.Content{
+  height: 100vh !important;
+}

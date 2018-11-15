@@ -1,0 +1,7 @@
+Layout:
+    ☐ design antd layout skeleton
+    
+Structure:
+    ✔ bind antd @done(18-11-16 01:58)
+        ✔ add react-app-rewired and babel-plugin-import @done(18-11-16 01:58)
+    ☐ bind react-leaflet
