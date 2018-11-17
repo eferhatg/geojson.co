@@ -1,7 +1,21 @@
 Layout:
-    ☐ design antd layout skeleton
+    ✔ design antd layout skeleton @done(18-11-16 15:58)
+    ✔ add search box to header @done(18-11-16 16:34)
+    ✔ add tile selector to header @done(18-11-16 16:58)
+    ✔ add accordion to sider @done(18-11-16 17:16)
+    ☐ Add layer to TileSelector and Searchbox
+
     
 Structure:
     ✔ bind antd @done(18-11-16 01:58)
         ✔ add react-app-rewired and babel-plugin-import @done(18-11-16 01:58)
-    ☐ bind react-leaflet
+    ✔ bind react-leaflet @done(18-11-16 15:57)
+    ✔ decouple components in mappage @done(18-11-16 16:18)
+    ✔ implement redux @done(18-11-17 03:28)
+    ☐ Develop TileLayer component
+    ☐ Change tilelayer on Tileselector changed
+    ☐ Drag and drop
+
+
+SearchBox:
+    ☐ Make Searchbox working for map
