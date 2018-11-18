@@ -4,6 +4,7 @@ import { SearchBox } from './SearchBox';
 import { TileSelector } from './TileSelector';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
+import {changeTile} from '../../logic/tile'
 const { Header } = Layout;
 class HeaderWrapper extends Component {
 
@@ -17,7 +18,7 @@ class HeaderWrapper extends Component {
             <Header   className="Header" >
             <div>
             <SearchBox />
-            <TileSelector tileProviders={this.props.tileProviders}/>
+            <TileSelector tileProviders={this.props.tileProviders} changeTile={this.props.changeTile}/>
 
              </div>
         
@@ -31,7 +32,7 @@ const mapStateToProps = state => ({
 });
   
   const mapDispatchToProps = dispatch => bindActionCreators({
-
+    changeTile
   }, dispatch);
   
 

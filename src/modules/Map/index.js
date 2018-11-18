@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
-
+import {connect} from 'react-redux';
 import { css } from "emotion";
+import {bindActionCreators} from 'redux';
+import {Tile} from './Tile';
 class MapWrapper extends Component {
   render() {
     const mapStyle = css`
@@ -15,10 +17,7 @@ class MapWrapper extends Component {
 
     return (
       <Map ref="map" className={mapStyle} center={position} zoom={13}>
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        />
+        <Tile selectedTile={this.props.selectedTile} tileProviders={this.props.tileProviders}/>
         <Marker position={position}>
           <Popup>
             A pretty CSS3 popup.
@@ -30,5 +29,13 @@ class MapWrapper extends Component {
     );
   }
 }
+const mapStateToProps = state => ({
+  tileProviders:state.tile.tileProviders.providers,
+  selectedTile:state.tile.selectedTile
+});
 
-export const MapModule = MapWrapper;
+const mapDispatchToProps = dispatch => bindActionCreators({
+
+}, dispatch);
+export const MapModule= connect(mapStateToProps, mapDispatchToProps)(MapWrapper);
+

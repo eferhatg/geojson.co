@@ -3,7 +3,7 @@ Layout:
     ✔ add search box to header @done(18-11-16 16:34)
     ✔ add tile selector to header @done(18-11-16 16:58)
     ✔ add accordion to sider @done(18-11-16 17:16)
-    ☐ Add layer to TileSelector and Searchbox
+    ✔ Add layer to TileSelector and Searchbox @done(18-11-18 20:16)
 
     
 Structure:
@@ -12,10 +12,13 @@ Structure:
     ✔ bind react-leaflet @done(18-11-16 15:57)
     ✔ decouple components in mappage @done(18-11-16 16:18)
     ✔ implement redux @done(18-11-17 03:28)
-    ☐ Develop TileLayer component
-    ☐ Change tilelayer on Tileselector changed
+    ✔ Develop TileLayer component @done(18-11-18 20:16)
+    ✔ Change tilelayer on Tileselector changed @done(18-11-18 20:16)
     ☐ Drag and drop
+    ☐ General refactoring
 
-
+TileSelector:
+    ✔ Make TileSelector working for map @done(18-11-18 20:15)
+    ☐ TileSelector, TileLayer, tile module tests
 SearchBox:
     ☐ Make Searchbox working for map

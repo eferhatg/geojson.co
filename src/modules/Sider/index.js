@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {  Layout } from "antd";
 import { Accordion } from "./Accordion";
+import {connect} from 'react-redux';
 
 const { Sider } = Layout;
 

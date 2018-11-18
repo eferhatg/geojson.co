@@ -4,9 +4,9 @@ export const TILE_CHANGED = "tile/TILE_CHANGED";
 
 const initialState = {
   tileProviders: {
-    selectedTile: "osm",
     providers: tileProviders
-  }
+  },
+  selectedTile: "osm_mapnick"
 };
 
 /*
@@ -32,11 +32,11 @@ Actions
 --------
 changeTile: dispatches change tile
 */
-export const changeTile = tile => {
+export const changeTile = selectedTile => {
   return dispatch => {
     dispatch({
       type: TILE_CHANGED,
-      tile: tile
+      tile: selectedTile
     });
   };
 };

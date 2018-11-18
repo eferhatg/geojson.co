@@ -18,12 +18,12 @@ export const tileProviders = [
       '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   },
   {
-    code: "hyd_full",
-    group: "Hydda",
-    name: "Full",
-    url: "https://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png",
+    code: "esri_wsm",
+    group: "Esri",
+    name: "WorldStreetMap",
+    url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
     maxZoom: 18,
     attribution:
-      'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
   }
 ];

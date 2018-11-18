@@ -3,16 +3,23 @@ import {generateOptionsArray} from './utils'
 import PropTypes from 'prop-types';
 import { css } from "emotion";
 import { Select } from "antd";
+
 const { Option, OptGroup } = Select;
 
-function handleChange(value) {
-  console.log(`selected ${value}`);
-}
+
 
 export class TileSelector extends Component {
     
-
-
+  constructor() {
+    super();
+    this.handleChange = this.handleChange.bind(this);
+  }
+  shouldComponentUpdate(nextProp,nextState){
+    return nextProp.tile.tileProviders.providers!==this.props.tileProviders
+  }
+  handleChange(value) {
+    this.props.changeTile(value);
+  }
 
   render() {
     const searchBoxWrapper= css`
@@ -20,13 +27,18 @@ export class TileSelector extends Component {
     
   `;
 
+
+  // function handleChange(value) {
+  //   console.log(`selected ${value}`);
+  // }
+
   let optionMap=this.props.tileProviders?generateOptionsArray(this.props.tileProviders):{}
     return (
         <div className={searchBoxWrapper} style={{ width: 250 }}>
         <Select
           defaultValue="Mapnik"
           style={{ width: 200 }}
-          onChange={handleChange}
+          onChange={this.handleChange}
         >
         {
           Object.keys(optionMap).map((key,i)=>(
@@ -44,6 +56,7 @@ export class TileSelector extends Component {
 }
 
 TileSelector.propTypes = {
-  tileProviders:PropTypes.array
+  tileProviders:PropTypes.array,
+  changeTile:PropTypes.func
 };
 
