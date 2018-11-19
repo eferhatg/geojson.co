@@ -15,10 +15,14 @@ Structure:
     ✔ Develop TileLayer component @done(18-11-18 20:16)
     ✔ Change tilelayer on Tileselector changed @done(18-11-18 20:16)
     ☐ Drag and drop
-    ☐ General refactoring
+    ✔ General refactoring @done(18-11-19 03:52)
+    ✔ Find a autocomplete provider @done(18-11-19 03:52)
 
 TileSelector:
     ✔ Make TileSelector working for map @done(18-11-18 20:15)
-    ☐ TileSelector, TileLayer, tile module tests
+    ✔ TileSelector, TileLayer, tile module tests @done(18-11-19 03:52)
+
 SearchBox:
-    ☐ Make Searchbox working for map
+    ☐ Write tests for search module
+    ☐ Make Searchbox autocomplete working
+    ☐ Develop fly-to animate on select

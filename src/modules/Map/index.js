@@ -18,13 +18,6 @@ class MapWrapper extends Component {
     return (
       <Map ref="map" className={mapStyle} center={position} zoom={13}>
         <Tile selectedTile={this.props.selectedTile} tileProviders={this.props.tileProviders}/>
-        <Marker position={position}>
-          <Popup>
-            A pretty CSS3 popup.
-            <br />
-            Easily customizable.
-          </Popup>
-        </Marker>
       </Map>
     );
   }

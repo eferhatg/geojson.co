@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TileSelector is generated correctly 1`] = `
+.emotion-0 {
+  float: right;
+}
+
 <div
-  className="css-1ntenul"
+  className="emotion-0"
   style={
     Object {
       "width": 250,

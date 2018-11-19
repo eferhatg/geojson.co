@@ -1,7 +1,7 @@
 import {generateOptionsArray} from './utils'
 
 describe('TileOptions',()=>{
-    test('is generating options correctly',()=>{
+    test('is generating options array correctly',()=>{
 
         let testProviders=[  {
             code: "osm",

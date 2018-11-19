@@ -34,7 +34,7 @@ changeTile: dispatches change tile
 */
 export const changeTile = selectedTile => {
   return dispatch => {
-    dispatch({
+    return dispatch({
       type: TILE_CHANGED,
       tile: selectedTile
     });
