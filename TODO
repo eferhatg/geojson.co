@@ -26,3 +26,4 @@ SearchBox:
     ☐ Write tests for search module
     ☐ Make Searchbox autocomplete working
     ☐ Develop fly-to animate on select
+    ☐ Dockerize 
